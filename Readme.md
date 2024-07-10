@@ -78,7 +78,7 @@ This hobby web application is designed to convert x265 MKV video files to x264 M
 
 ## Usage
 
-1. **Store the mkv file to be converted into the media/videos folder **
+1. **Store the mkv file to be converted into the media/videos folder**
 
 2. **Configure Subtitles and Audio click on encode video**
 
