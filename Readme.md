@@ -78,23 +78,11 @@ This hobby web application is designed to convert x265 MKV video files to x264 M
 
 ## Usage
 
-1. **Upload a Video File**
+1. **Store the mkv file to be converted into the media/videos folder **
 
-   ![Upload Video](images/upload_video.png)
+2. **Configure Subtitles and Audio click on encode video**
 
-   Select an x265 MKV video file from your computer and upload it through the web interface.
-
-2. **Configure Subtitles and Audio**
-
-   ![Configure Subtitles](images/configure_subtitles.png)
-
-   Add multiple subtitles and audio files to be embedded into the resulting MP4 file.
-
-3. **Convert and Stream**
-
-   ![Convert and Stream](images/convert_and_stream.png)
-
-   Click the "Convert" button to start the conversion process. Once completed, the MP4 file will be available for streaming.
+3. **Watch the encode status and watch all the completed, waiting, error encodes**
 
 ## Screenshots
 
