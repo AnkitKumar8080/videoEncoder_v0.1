@@ -1,0 +1,47 @@
+@import "../../styles/global";
+
+.metricGauge {
+  height: 200px;
+  width: 200px;
+  // border: 1px solid lightgrey;
+  border-radius: $border-radius-light;
+  background-color: $module-background-color;
+  box-shadow: $box-shadow-light;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  > span {
+    color: lightblue;
+    font-weight: $font-weight-light;
+    font-size: 15px;
+    margin: 6px 0;
+  }
+
+  .gauge {
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    // background-color: $primary-color;
+    // background: conic-gradient(#7a80f0 14deg, rgb(28, 28, 28) 0deg);
+
+    .filler-div {
+      width: 120px;
+      height: 120px;
+      position: absolute;
+      top: 10%;
+      right: 10%;
+      border-radius: 50%;
+      z-index: 99;
+      background-color: $module-background-color;
+
+      > span {
+        position: absolute;
+        bottom: 40%;
+        left: 30%;
+      }
+    }
+  }
+}

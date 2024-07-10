@@ -1,0 +1,70 @@
+@import "../../styles/global";
+.queue-status {
+  // border: 1px solid white;
+  margin-top: 2rem;
+  > span {
+    color: $primary-color;
+    font-size: $header-font-size;
+  }
+
+  .wait-queue,
+  .completed-queue,
+  .error-queue {
+    width: 900px;
+    min-height: 180px;
+    background-color: $module-background-color;
+    // overflow-x: scroll;
+    border-radius: $border-radius-light;
+    box-shadow: $box-shadow-light;
+    padding: 1rem;
+    margin: 0.5rem 1rem 2rem 1rem;
+    overflow-x: scroll;
+    &::-webkit-scrollbar {
+      width: 1em;
+      height: 5px;
+    }
+
+    &::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: darkgrey;
+      outline: 1px solid slategrey;
+    }
+
+    ul li {
+      list-style: none;
+      color: whitesmoke;
+      span {
+        color: lightgreen;
+      }
+    }
+    .wait-queue-info,
+    .completed-queue-info,
+    .error-queue-info {
+      background-color: $background-color;
+      min-width: 260px;
+      max-width: 260px;
+      padding: 1rem;
+    }
+  }
+  .wait-queue {
+    display: flex;
+    gap: 10px;
+  }
+
+  .wait-queue-info {
+    position: relative;
+  }
+  .remove-icon {
+    color: darkred;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    cursor: pointer;
+    &:hover {
+      color: red;
+    }
+  }
+}

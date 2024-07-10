@@ -1,0 +1,23 @@
+{
+  "name": "videotranscoder_v0.1",
+  "version": "1.0.0",
+  "description": "This is a encoder which converts mkv to mp4 libx264 format and also converting the audio format to aac with language support ",
+  "main": "app.js",
+  "scripts": {
+    "test": "node test.js",
+    "start": "nodemon app.js"
+  },
+  "author": "Ankit Kumar",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "axios": "^1.5.1",
+    "colors": "^1.4.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "fluent-ffmpeg": "^2.1.2",
+    "morgan": "^1.10.0",
+    "nodemon": "^3.0.1"
+  }
+}

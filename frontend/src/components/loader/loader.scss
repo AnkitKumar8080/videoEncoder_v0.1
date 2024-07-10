@@ -1,0 +1,29 @@
+@import "../../styles/global";
+.loader {
+  height: 50px;
+  width: 100%;
+  // background-color: blue;
+
+  .outer-div {
+    height: 20px;
+    max-width: 600px;
+    background-color: rgb(28, 28, 28);
+    border-radius: $border-radius-medium;
+    position: relative;
+    margin-top: 1rem;
+
+    .filler-div {
+      background-color: $primary-color;
+      height: 100%;
+      border-radius: $border-radius-medium;
+    }
+    span {
+      position: absolute;
+      right: 1rem;
+      top: 1.3rem;
+      font-size: $base-font-size;
+      font-weight: $font-weight-semibold;
+      color: lightgreen;
+    }
+  }
+}

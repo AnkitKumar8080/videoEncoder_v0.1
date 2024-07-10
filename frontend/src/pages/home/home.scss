@@ -1,0 +1,58 @@
+@import "../../styles/global";
+.home {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+
+  .left-section {
+    width: 300px;
+    height: 100%;
+    border-right: 1px solid grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    > span {
+      font-size: $header-font-size;
+      font-weight: $font-weight-bold;
+      color: rgb(93, 0, 199);
+      // color: whitesmoke;
+      margin: 2rem 0;
+    }
+
+    ul {
+      .selected {
+        background-color: $secondary-color;
+        color: black;
+      }
+      li {
+        list-style: none;
+        cursor: pointer;
+        // background-color: cyan;
+        margin: 1rem;
+        font-size: $base-font-size;
+        font-weight: $font-weight-medium;
+        color: white;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        transition: background-color 0.2s;
+        border-radius: $border-radius-medium;
+
+        &:hover {
+          background-color: $secondary-color;
+          color: black;
+        }
+
+        .dash-icons {
+          font-size: 18px;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+
+  .right-section {
+    padding-left: 2rem;
+  }
+}

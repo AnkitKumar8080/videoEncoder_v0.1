@@ -1,0 +1,25 @@
+@import "../../styles/global";
+.message {
+  // border: 1px solid grey;
+  max-width: fit-content;
+  background-color: whitesmoke;
+  box-shadow: $box-shadow-medium;
+  .mssg {
+    font-size: $base-font-size;
+    font-weight: $font-weight-medium;
+    padding: 0.5rem 1rem;
+  }
+
+  .outer-div1 {
+    height: 5px;
+    width: 100%;
+    background-color: lightblue;
+
+    .inner-div2 {
+      height: 100%;
+      width: 100%;
+      transition: width 50ms ease;
+      background-color: $primary-color;
+    }
+  }
+}

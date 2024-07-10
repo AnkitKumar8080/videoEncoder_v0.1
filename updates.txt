@@ -1,0 +1,3 @@
+language update 
+for each video stored 
+update the incomplete queue on video cancel or error and add a hover effect to display the reason y it was cancelled 

@@ -1,0 +1,54 @@
+@import "../../styles/global";
+.login {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .login-container {
+    height: 300px;
+    width: 300px;
+    background-color: whitesmoke;
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: $box-shadow-medium;
+
+    span {
+      font-size: $header-font-size;
+      font-weight: $font-weight-medium;
+      letter-spacing: 1px;
+      margin: 0.5rem;
+    }
+    .error {
+      font-size: 10px;
+      color: red;
+    }
+
+    .username-field,
+    .password-field {
+      display: flex;
+      margin: 1rem 0 1rem 0;
+      border-bottom: 2px solid $primary-color;
+      padding: 5px;
+
+      .icon {
+        margin: 5px 5px 2px 0;
+      }
+      input {
+        width: 90%;
+        border: none;
+        outline: none;
+        background-color: transparent;
+        font-size: $base-font-size;
+      }
+      .hide-icon {
+        margin: 5px 0 0 5px;
+        cursor: pointer;
+      }
+    }
+  }
+}

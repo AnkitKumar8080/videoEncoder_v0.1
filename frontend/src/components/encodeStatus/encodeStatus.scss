@@ -1,0 +1,32 @@
+@import "../../styles/global";
+.encodeStatus {
+  margin-top: 2rem;
+  > span {
+    color: $primary-color;
+    font-size: $header-font-size;
+  }
+
+  .encodeDetails {
+    background-color: $module-background-color;
+    border-radius: $border-radius-light;
+    box-shadow: $box-shadow-light;
+    margin: 1rem;
+    padding: 10px;
+
+    ul {
+      margin: 0.5rem 1rem;
+
+      li {
+        list-style: none;
+        color: white;
+        > span {
+          color: lightgreen;
+        }
+      }
+
+      .stop-btn {
+        float: none;
+      }
+    }
+  }
+}

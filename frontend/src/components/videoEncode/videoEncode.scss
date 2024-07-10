@@ -1,0 +1,49 @@
+@import "../../styles/global";
+
+.video-encode {
+  padding: 2rem 1rem;
+  > span {
+    color: $primary-color;
+    font-size: $header-font-size;
+  }
+
+  .video-encode-wrap {
+    background-color: $module-background-color;
+    border-radius: $border-radius-light;
+    box-shadow: $box-shadow-light;
+    padding: 1rem;
+    margin: 1rem;
+
+    .video-encode-selector {
+      display: flex;
+      flex-direction: column;
+      select {
+        width: 50%;
+        padding: 5px;
+        font-size: $base-font-size;
+        font-weight: $font-weight-semibold;
+        margin: 1rem;
+        border-radius: $border-radius-light;
+        background: $background-color;
+        color: whitesmoke;
+        outline: none;
+        border: none;
+        cursor: pointer;
+
+        option {
+          background-color: $secondary-color-light;
+          color: black;
+          font-size: $base-font-size;
+          font-weight: $font-weight-normal;
+          border: none;
+          border-radius: $border-radius-light;
+        }
+      }
+    }
+  }
+  .message-popup {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
+}

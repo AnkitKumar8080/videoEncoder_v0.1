@@ -1,0 +1,61 @@
+$background-color: #1f1f1f;
+$module-background-color: #313234;
+$primary-color: #7a80f0;
+$secondary-color-light: #bcffdb;
+$secondary-color: #79ffb7;
+
+$primary-color-hover: rgb(111, 115, 206);
+
+$header-font-size: 24px;
+$option-font-size: 18px;
+$base-font-size: 16px;
+$primary-font-style: "Poppins", sans-serif;
+
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+$font-weight-extra-bold: 800;
+$font-weight-black: 900;
+$box-shadow-light: rgba(0, 0, 0, 0.336) 0px 2px 8px 0px;
+$box-shadow-medium: 0 0 40px 0 rgba(0, 0, 0, 0.65);
+$box-shadow-dark: 0 0 40px 0 rgba(0, 0, 0, 0.774);
+
+$border-radius-light: 5px;
+$border-radius-medium: 10px;
+
+$breakpoint-small: 576px;
+$breakpoint-medium: 768px;
+$breakpoint-large: 992px;
+
+body {
+  background-color: $background-color;
+  font-family: $primary-font-style;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.Link {
+  text-decoration: none;
+}
+
+.btn {
+  padding: 5px 20px;
+  border: none;
+  background-color: $primary-color;
+  color: white;
+  font-weight: $font-weight-semibold;
+  font-size: $base-font-size;
+  border-radius: 5px;
+  float: right;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: $primary-color-hover;
+  }
+}

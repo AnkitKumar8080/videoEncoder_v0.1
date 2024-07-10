@@ -1,0 +1,16 @@
+@import "../../styles/global";
+.resourceVitals {
+  // border: 1px solid grey;
+  // padding: 1.5rem;
+
+  > span {
+    color: $primary-color;
+    font-size: $header-font-size;
+  }
+
+  .vitals {
+    display: flex;
+    margin: 1rem;
+    gap: 50px;
+  }
+}
